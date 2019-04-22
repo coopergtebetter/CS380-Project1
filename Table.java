@@ -86,7 +86,7 @@ public class Table {
                         handSize--;
                         hand.get(i).swap();
                         board = hand.get(i).toString() + board;
-                        System.out.println(hand.get(i).toString() + " played on left train (1)");
+                        System.out.println(hand.get(i).toString() + " played on left train");
                         leftHead = hand.get(i).left;
                         hand.remove(i);
                         break;
@@ -95,7 +95,7 @@ public class Table {
                         flag = true;
                         handSize--;
                         board = hand.get(i).toString() + board;
-                        System.out.println(hand.get(i).toString() + " played on left train (2)");
+                        System.out.println(hand.get(i).toString() + " played on left train");
                         leftHead = hand.get(i).left;
                         hand.remove(i);
                         break;
@@ -104,7 +104,7 @@ public class Table {
                         flag = true;
                         handSize--;
                         board = board + hand.get(i).toString();
-                        System.out.println(hand.get(i).toString() + " played on right train (3)");
+                        System.out.println(hand.get(i).toString() + " played on right train");
                         rightHead = hand.get(i).right;
                         hand.remove(i);
                         break;
@@ -114,7 +114,7 @@ public class Table {
                         handSize--;
                         hand.get(i).swap();
                         board = board + hand.get(i).toString();
-                        System.out.println(hand.get(i).toString() + " played on right train (4)");
+                        System.out.println(hand.get(i).toString() + " played on right train");
                         rightHead = hand.get(i).right;
                         hand.remove(i);
                         break;
